@@ -56,6 +56,7 @@ header {
   	align-items: center;
 	flex-flow: row wrap;
 	width: 100%;
+	text-align: center;
 	
 }
 
@@ -72,6 +73,7 @@ header h1 span {
 
 header nav {
 	padding: 46px 0;
+	
  
 
 	 
@@ -91,11 +93,8 @@ header nav ul li {
 	font-size: .875em;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: flex;
-	flex: row wrap;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
+	list-style-type: none;
 	
 
 }
@@ -162,14 +161,15 @@ header nav ul li a{
 }
 
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+.reviews {	
+    padding-left: 0px;
+    padding-right: 0px;
+
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 0px;
 	
 }
 
@@ -198,6 +198,7 @@ header nav ul li a{
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0px;
 }
 
 /*The widths are in a percentage!*/
@@ -219,12 +220,246 @@ footer span {
 	font-size: .875em;
 }
 
+
+/*----------------------------------------------------------*/
 @media all and (min-width:768px) {
-    /* Tablet styles here */
+	html {
+		font-size: 16px;
+	}
+	
+	
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		flex-flow: row wrap;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		flex-flow: row wrap;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		font-size: 2em;
+		color: black;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	h1 {
+		font-size: 1.875em;
+	}
+	h2 {
+		font-size: 1.125em;
+	}
+	h3 {
+		font-size: .75em;
+	}
+	
+	p {
+		font-size: .875em;
+		line-height: 21px;
+		padding: 0 30px;
+	}
+	
+	/*The widths are in a percentage!*/
+	header {
+		height: auto;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		text-align: center;
+		width: 100%;
+		
+	}
+	
+	header h1 {
+		border: none;
+		margin: 0;
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+	header h1 span {
+		color: #77a466;
+	}
+	
+	header nav {
+		padding: 46px 0;
+		width: 100%;
+		border-top: 3px solid #77a466;
+	}
+	
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		
+	}
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: .875em;
+		padding: 0 10px;
+		display: inline;
+		text-decoration-style: none;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+	
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+		
+		
+	}	
+	
+	/*The widths are in a percentage!*/
+	.top-section,
+	.bottom-section {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		width: 100%;
+		
+	}
+	
+	.main-image {
+		height: auto;
+		
+	}
+	.main-image img {
+		width: 100%;
+		border-bottom: 3px solid #77a466;
+		border-top: 3px solid #77a466;
+	}
+	
+	.main-title {
+		height: auto;
+		
+	}
+	.main-title h2 {
+		text-align: left;
+		padding: 5px 0;
+		color: #77a466;
+	}
+	.main-title p {
+		padding: 0;
+		font-size: 1em;
+		line-height: 25px;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+		height: auto;
+		border-top: 1px solid #eee;
+		align-items: flex-start;
+	
+	}
+	
+	.section-one h3 {
+		padding: 10px 0;
+	}
+	
+	.section-one {
+		padding-bottom: 89px;
+	}
+	
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+		
+	}
+	
+	.section-two h3 {
+		margin-bottom: 0px;
+
+	}
+
+	.section-three {
+		padding-top: 0px;
+		padding-bottom: 152px;
+
+	}
+	
+	
+	.menu {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 30px;
+
+	}
+	.menu li {
+		padding: 10px 0;
+		color:#77a466;
+	}
+	
+	.reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 21px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 10px;
+	
+	}
+	
+	.address {
+		font-size: 1em;
+		line-height: 24px;
+		padding-left: 15px;
+		margin-bottom: 31px;
+	
+	}
+	
+	/*The widths are in a percentage!*/
+	footer {
+		height: auto;
+		border-top: 3px solid #eee;
+		margin: 0 auto;
+		display: flex;
+		  justify-content: center;
+		  align-items: center;
+		text-align: center;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	footer span {
+		font-family: 'Galada', cursive;
+		text-transform: lowercase;
+		color: #77a466;
+		font-size: .875em;
+	}
+	
+	 
+	}
  
 }
 
-
+/*-------------------------------------------------------------------*/
  
 @media all and (min-width:1200px) {
     
@@ -280,10 +515,6 @@ p {
 header {
 	height: auto;
 	margin: 0 auto;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-	flex-flow: row wrap;
 	width: 100%;
 	
 }
@@ -292,6 +523,7 @@ header h1 {
 	
 	margin: 0;
 	padding: 38px 0;
+
 }
 header h1 span {
 	color: #77a466;
