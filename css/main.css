@@ -63,19 +63,251 @@ header h1 {
 	
 	margin: 0;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0; 
+	padding: 46px 0;
+ 
+
+	 
 
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
+	
+	
+	
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex: row wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	
+
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+	padding-bottom: 21px;
+	padding-top: 10px;
+	
+	
+}	
+
+
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+	
+}
+
+.main-image {
+	height: auto;
+	
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 90%;
+	height: auto;
+	border-top: 1px solid #eee;
+	align-items: flex-start;
+
+}
+
+.section-one h3 {
+	padding: 10px 0;
+}
+
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding: 10px 30px;
+	
+}
+
+.section-three {
+
+    padding-top: 0px;
+
+}
+
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: auto;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	text-align: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+}
+
+
+ 
+@media all and (min-width:1200px) {
+    
+html {
+    font-size: 16px;
+}
+
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	flex-flow: row wrap;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	width: 90%;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	font-size: 2em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 21px;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+	
+}
+
+header h1 {
+	
+	margin: 0;
+	padding: 38px 0;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 46px 0;
+    padding-left: 392px;
+
+	 
+
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -83,11 +315,14 @@ header nav ul li {
 	font-size: .875em;
 	padding: 0 10px;
 	display: inline;
+
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-}
+	
+	
+}	
 
 /*The widths are in a percentage!*/
 .top-section,
@@ -140,6 +375,10 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
+.section-one {
+	padding-bottom: 30px;
+}
+
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
@@ -149,6 +388,13 @@ header nav ul li a{
 .section-three h3 {
 	padding: 10px 30px;
 	
+}
+
+.section-three {
+
+    padding-top: 0px;
+    padding-bottom: 76px;
+
 }
 
 
@@ -189,4 +435,7 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+ 
 }
